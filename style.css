@@ -5,8 +5,8 @@
         *{
     padding:0px;
     margin:0px;
-    box-sizing:border-box;
-   outline:2px solid red;
+    box-sizing:content-box;
+  
 }
 body{
    
