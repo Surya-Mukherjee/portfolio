@@ -757,4 +757,7 @@ bottom:12%;
   .skill-display{
     height:60%!important;
   }
+  *{
+    outline:none;
+  }
 }
