@@ -752,7 +752,8 @@ bottom:4vh;
 
   }
   .skills{
-    height:2500px !important
+    height:2500px !important;
+    overflow:hidden;
   }
   .skill-display{
     height:70%!important;
