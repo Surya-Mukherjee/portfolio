@@ -473,7 +473,7 @@ h3{
 }
 
 .skills{
-    height:1200px;
+    height:100%;
     width:100%;
     background-color: #2a2c39;
     display:flex;
@@ -513,7 +513,7 @@ animation-timeline:view(60% 0%) !important;
 }
 .skill-display{
   background-color: #3e3e43cb;
-    height:1200px;
+    height:100%;
     width:calc(50%);
     padding:200px 0px 0px 20px ;
    
