@@ -13,8 +13,8 @@ body{
     min-height:100vh;
   
     margin:0px;
-
-   overflow-x:hidden !important;
+/* 
+   overflow-x:hidden !important; */
 }
 
 .topscreenscroll {
@@ -55,13 +55,13 @@ body{
     list-style:none;
     width:100%;
    display:flex;
-   justify-content:flex-end;
-   align-content:center;
+   justify-content: center;
+   align-items:center;
 }
 .nodropdown li{
   height:50px;
     display:inline-block;
-    
+    position:relative;
 
 }
 ul li a{
@@ -81,7 +81,7 @@ ul li ul.dropdown a{
     height: 100% !important;;
 }
 ul li ul.dropdown li{
- display:block;
+ display:flex;
  text-align:left;
 
  position:relative;
@@ -106,33 +106,39 @@ ul li ul.dropdown li::before{
     top:0px;
     background-color:white;
    
-  transform: scaleX(0);               
-  transform-origin: right;            
+  transform: scaleX(0)!important;               
+  transform-origin: right!important;
+    transition: transform 0.3s ease-in-out;
+    z-index:-1; 
   transition: transform 0.3s ease-in-out;
 
     z-index:-1;
 }
     ul li ul.dropdown li:hover::before{
-      transform:scaleX(1);
-      transform-origin:left;
+      transform:scaleX(1)!important;
+      transform-origin:left!important;
        
     }
   
 
 
-ul li .dropdown {
+ul li ul.dropdown {
   width: 250px;
-  background: hsl(231, 13%, 20%);
+
+  background: hsl(231, 13%, 21%);
  position:absolute;
-  z-index:0;
+  z-index:2000;
   transform-origin: top;
-  transform: scaleY(0);
+  transform: scaleY(0)!important;
   transition: transform 0.4s ease;
 }
-ul li:hover ul.dropdown {
-  transform: scaleY(1);
+ul li:hover > ul.dropdown {
+  transform: scaleY(1) !important;
 }
 
+ul li ul.dropdown >li>a{
+    width:100%;
+}
 
 ul li a:hover{
    color:black;
@@ -304,7 +310,7 @@ h3{
  right:350px;
  height:700px;
 
- z-index:-1s!important;
+ z-index:-1!important;
 }
 .c1{
     height:150px;
