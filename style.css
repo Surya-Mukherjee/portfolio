@@ -736,8 +736,8 @@ bottom:25%;
    height:50px !important;
    background-color:#37383b !important;
  position:fixed;
-bottom:12%;
-    right:5%;
+bottom:4vh;
+    
 
  z-index:9999!important;
  color:white;
@@ -755,7 +755,11 @@ bottom:12%;
     height:2500px !important
   }
   .skill-display{
-    height:60%!important;
+    height:70%!important;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:start;
+    
   }
   *{
     outline:none;
